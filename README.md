@@ -20,3 +20,20 @@ Browse events and categories
 Enroll in events
 View personal enrollments and results
 
+## Clone the Repository
+git clone <your-github-link>
+cd RaceDayAPI
+
+## Database Setup
+- Ensure SQL Server is installed and running.
+* Update appsettings.json with your connection string:
+"ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Database=RaceDayDB;Trusted_Connection=True;"
+}
+
++ Run migrations:
+dotnet ef database update
+
+## Run the API
+
+## Swagger UI
